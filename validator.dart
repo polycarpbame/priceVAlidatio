@@ -1,37 +1,14 @@
 import 'dart:io';
+// ignore: unused_import
+import 'dart:math';
+import 'dart:convert';
 
-void main() {
-  print('''Enter the volume of your Trash
-  bucket for volumnn of 30
-  trash bag for a volumn of 35
-  wheelbarrow fro a volumn of 100
-  ''');
-  stdout.write('>> ');
-  String volumn = stdin.readLineSync() ?? "";
-  if (volumn.toUpperCase() == 'BUCKET' ||
-      volumn.toUpperCase() == 'TRASH BAG' ||
-      volumn.toUpperCase() == 'WHEELBARROW') {
-    stdout.write('Enter number of ${volumn}s: ');
-    dynamic numberOf = stdin.readLineSync();
-    numberOf = int.parse(numberOf);
-    print(TrashVolume.calTotalPrice(container: volumn, numberOf: numberOf));
-    TrashVolume ntrash = new TrashVolume(
-      numberOf: numberOf,
-    );
-
-    stdout.write("Do you wanner bit the price (y/n): ");
-    String respond = stdin.readLineSync() ?? '';
-    if (respond.toUpperCase() == 'Y') {
-      stdout.write('Enter your privce: ');
-      dynamic myPrice = stdin.readLineSync();
-      myPrice = int.parse(myPrice);
-      print(ntrash.bitPrice(container: volumn, price: myPrice));
-    } else if (respond.toUpperCase() == 'N') {
-      print('Price confirmed');
-    }
-    print(ntrash.TotallVolumn(volumn));
-  }
-}
+// Future<void> jsondata() async {
+//   File file = new File('angent.json');
+//   String content = await file.readAsString();
+//   Map<String, dynamic> data = jsonDecode(content);
+//   print(data['agent_id']);
+// }
 
 dynamic category = [
   {'category': 'papers', 'deducePecentage': 0.7},
@@ -45,12 +22,13 @@ dynamic infors = [
   {'name': 'wheelbarrow', 'volumn': 100, 'price': 500}
 ];
 
-class TrashVolume {
+class TrashValidate {
   var thresholdVolumn = 1500;
 
   final numberOf;
-  TrashVolume({this.numberOf});
+  TrashValidate({this.numberOf});
   TotallVolumn(container) {
+    //var container = container
     for (var items in infors) {
       if (items['name'] == container) {
         var totalVolumn = items['volumn'] * this.numberOf;
@@ -68,6 +46,7 @@ class TrashVolume {
         var totalPrice = items['price'] * numberOf;
         return 'your price is $totalPrice';
       }
+      return 'you did somthing';
     }
   }
 
@@ -81,5 +60,24 @@ class TrashVolume {
         return '$price is okay';
       }
     }
+  }
+
+  static distance({Latitude1, Latitude2, Longitude1, Longitude2}) {
+    Latitude1 = Latitude1 * (3.14 / 180.0);
+    Latitude2 = Latitude2 * (3.14 / 180.0);
+    Longitude1 = Longitude1 * (3.14 / 180.0);
+    Longitude2 = Longitude2 * (3.14 / 180.0);
+    double R = 6371;
+    double latitudeDifferece = Latitude2 - Latitude1;
+    double longitudeDifferece = Longitude2 - Longitude1;
+    double a = pow(sin((latitudeDifferece / 2)), 2) +
+        cos(Latitude1) * cos(Latitude2) * pow(sin(longitudeDifferece / 2), 2);
+    double sqrtOfA = sqrt(a);
+    double n = 1 - sqrtOfA;
+    double sqrtOfA_1 = sqrt(n);
+    double c = 2 * atan2(sqrtOfA, sqrtOfA_1);
+    double distance = R * c;
+
+    return distance;
   }
 }

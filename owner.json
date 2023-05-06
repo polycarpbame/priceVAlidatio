@@ -1,0 +1,129 @@
+[
+    {
+        "owner_id": "1",
+        "first_name":"Abanda",
+        "last_name":"Blanche",
+        "email":"blanche.a@mail.com",
+        "profile_photo_url":"http://www.photo.com",
+        "country_code": "+237",
+        "phone_number":"658978541",
+        "account_status":"Active",
+        "account_is_verified":"true",
+        "education_level":"Master",
+        "device_token":"p8578942kj",
+        "user_preferences_id":"1",
+        "kyc":"null",
+        "longitude":"3.8303022057167135",
+        "latitude":"11.474055505777187",
+        "address":{
+            "street":"Doov Mendong",
+            "city":"Yaounde",
+            "state":"Center",
+            "zip":"0000",
+            "country":"Cameroon"
+        }
+    },
+
+    {
+        "owner_id": "2",
+        "first_name":"History",
+        "last_name":"Maker",
+        "email":"history@mail.com",
+        "profile_photo_url":"http://www.photo.com",
+        "country_code": "+237",
+        "phone_number":"698787874",
+        "account_status":"Active",
+        "account_is_verified":"true",
+        "education_level":"Bachelor",
+        "device_token":"p8578942kjo",
+        "user_preferences_id":"1",
+        "kyc":"null",
+        "longitude":"3.830045288782155",
+        "latitude":"11.477735496318349",
+        "address":{
+            "street":"Montee Jouvence",
+            "city":"Yaounde",
+            "state":"Center",
+            "zip":"0000",
+            "country":"Cameroon"
+        }
+    },
+
+    {
+        "owner_id": "3",
+        "first_name":"Jeremiah",
+        "last_name":"Peter",
+        "email":"peter@email.com",
+        "profile_photo_url":"http://www.photo.com",
+        "country_code": "+237",
+        "phone_number":"67474747",
+        "account_status":"Active",
+        "account_is_verified":"true",
+        "education_level":"Bachelor",
+        "device_token":"p8578942kj",
+        "user_preferences_id":"null",
+        "kyc":"null",
+        "longitude":"3.837937706008079",
+        "latitude":"11.47493436563542",
+        "address":{
+            "street":"Chapelle TKC",
+            "city":"Yaounde",
+            "state":"Center",
+            "zip":"0000",
+            "country":"Cameroun"
+        }
+    },
+
+    {
+        "owner_id": "4",
+        "first_name":"Peter",
+        "last_name":"Njahmi",
+        "email":"peter.njahmi@gmail.com",
+        "profile_photo_url":"http://www.photo.com",
+        "country_code": "237",
+        "phone_number":"651087579",
+        "account_status":"Active",
+        "account_is_verified":"true",
+        "education_level":"Dipet II",
+        "device_token":"p8578942kjjj",
+        "user_preferences_id":"1",
+        "kyc":"",
+        "location_information_id":"",
+        "longitude":"3.830333",
+        "latitude":"11.474352",
+        "address":{
+            "street":"Entree Simbock",
+            "city":"Yaounde",
+            "state":"Center",
+            "zip":"442",
+            "country":"Cameroon"
+        }
+    },
+
+    {
+        "owner_id": "5",
+        "first_name":"Farrah",
+        "last_name":"Casa",
+        "email":"farrah@mail.com",
+        "profile_photo_url":"http://www.photo.com",
+        "country_code": "+237",
+        "phone_number":"68974587",
+        "account_status":"Active",
+        "account_is_verified":"true",
+        "education_level":"Master",
+        "device_token":"p8578942kjjja",
+        "user_preferences_id":"2",
+        "kyc":"null",
+        "longitude":"3.8343344845447866",
+        "latitude":"11.485157474860843",
+        "address":{
+            "street":"Rond point express",
+            "city":"Yaounde",
+            "state":"Center",
+            "zip":"0000",
+            "country":"Cameroun"
+        }
+    }
+    
+
+]

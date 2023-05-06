@@ -1,0 +1,82 @@
+[
+    {
+        "agent_id":"1",
+        "first_name":"Serie",
+        "last_name":"Pare",
+        "email":"pare@mail.com",
+        "phone_number":"pare@mail.com",
+        "profile_photo_url":"http://photo.com",
+        "education_level":"Bachelor",
+        "account_status":"Active",
+        "account_is_verified":"true",
+        "country_code":"+237",
+        "device_token":"vvbp8578942kjjja",
+        "kyc_id":"null",
+        "user_preferences_id":"1",
+        "location":{
+            "longitude":"3.87114520072109",
+            "latitude":"11.476955907964737"
+        },
+        "address":{  
+            "street":"Nouvelle route Nkolbisson",
+            "city":"Yaounde",
+            "state":"Centre",
+            "zip":"0000",
+            "country":"Camerouun"
+        }
+    },
+
+    {
+        "agent_id":"2",
+        "first_name":"Green",
+        "last_name":"Leaf",
+        "email":"leaf@mail.com",
+        "phone_number":"698452147",
+        "profile_photo_url":"http://photo.com",
+        "education_level":"Bachelor",
+        "account_status":"Active",
+        "account_is_verified":"true",
+        "country_code":"+237",
+        "device_token":"p8578942kjjjann",
+        "kyc_id":"null",
+        "user_preferences_id":"1",
+        "location":{
+            "longitude":"3.831518393288551",
+            "latitude":"11.467411536800038"
+        },
+        "address":{ 
+            "street":"Gendarmerie Mendong",
+            "city":"Yaounde",
+            "state":"Center",
+            "zip":"000",
+            "country":"Cameroon"
+        }
+    },
+
+    {
+        "agent_id":"3",
+        "first_name":"Voila",
+        "last_name":"Combinaison",
+        "email":"combi@mail.com",
+        "phone_number":"658745874",
+        "profile_photo_url":"http://photo.com",
+        "education_level":"GCE",
+        "account_status":"Active",
+        "account_is_verified":"true",
+        "country_code":"+237",
+        "device_token":"p8578942kjjja45g",
+        "kyc_id":"null",
+        "user_preferences_id":"1",
+        "location":{
+            "longitude":"3.8362720181022745",
+            "latitude":"11.48424537330612"
+        },
+        "address":{
+            "street":"Rond point express",
+            "city":"Yaounde",
+            "state":"Center",
+            "zip":"0000",
+            "country":"Cameroon"
+        }
+    }
+]
